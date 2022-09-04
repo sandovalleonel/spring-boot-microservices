@@ -44,8 +44,7 @@ public class BikeController {
     public ResponseEntity<List<Bike>> gelByUserId(@PathVariable Long id){
 
         List<Bike> bikes = bikeService.buscarPorUserId(id);
-        if (bikes.isEmpty())
-            return ResponseEntity.noContent().build();
+
         return ResponseEntity.ok(bikes);
     }
 

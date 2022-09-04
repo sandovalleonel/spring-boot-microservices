@@ -43,8 +43,7 @@ public class CarController {
     public ResponseEntity<List<Car>> gelByUserId(@PathVariable Long id){
         System.out.println(id);
         List<Car> cars = carService.buscarPorUserId(id);
-        if (cars.isEmpty())
-            return ResponseEntity.noContent().build();
+
         return ResponseEntity.ok(cars);
     }
 
