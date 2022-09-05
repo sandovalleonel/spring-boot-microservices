@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          default-label: vid6
+          default-label: vid7
           uri: https://github.com/sandovalleonel/spring-boot-microservices
           search-paths: config-data
   application:
