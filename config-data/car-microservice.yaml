@@ -1,4 +1,4 @@
-serve:
+server:
   port: 8002
 eureka:
   client:
